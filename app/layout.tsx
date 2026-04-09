@@ -1,14 +1,33 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Noto_Sans_KR, Noto_Serif_KR, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const notoSansKr = Noto_Sans_KR({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-noto-sans-kr',
+  display: 'swap',
+})
+
+const notoSerifKr = Noto_Serif_KR({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-noto-serif-kr',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: '드림파트너스 행정사 사무소 | 행정 업무의 든든한 파트너',
-  description: '비영리법인설립, 출입국 업무, 행정심판, 인허가, 토지보상까지 - 드림파트너스 행정사 사무소가 함께합니다.',
+  title: '드림파트너스 행정사 사무소 | 신뢰와 전문성의 행정 파트너',
+  description: '비영리법인설립, 농업법인설립, 투자(D-8), 취업(E-7), 영주권(F-5), 재외동포(F-4), 행정심판, 부동산, 인허가 전문. 드림파트너스 행정사 사무소가 복잡한 행정 업무를 명쾌하게 해결해 드립니다.',
+  keywords: ['행정사', '비자', '인허가', '비영리법인설립', '농업법인설립', '서울 행정사', '행정심판', '영주권', '재외동포'],
   generator: 'v0.app',
   icons: {
     icon: [
@@ -27,6 +46,12 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+  openGraph: {
+    title: '드림파트너스 행정사 사무소 | 신뢰와 전문성의 행정 파트너',
+    description: '비영리법인설립, 농업법인설립, 투자(D-8), 취업(E-7), 영주권(F-5), 재외동포(F-4), 행정심판, 부동산, 인허가 전문. 드림파트너스 행정사 사무소가 복잡한 행정 업무를 명쾌하게 해결해 드립니다.',
+    locale: 'ko_KR',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
@@ -35,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${notoSansKr.variable} ${notoSerifKr.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
