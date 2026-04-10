@@ -152,7 +152,7 @@ export default function HomePage() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild className="border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/5">
+                <Button size="lg" variant="outline" asChild className="border-primary text-primary bg-white hover:bg-primary/5">
                   <Link href="/about">사무소 소개</Link>
                 </Button>
               </div>
