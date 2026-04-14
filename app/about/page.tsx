@@ -158,7 +158,7 @@ export default function AboutPage() {
               {team.map((member) => (
                 <Card key={member.name} className="border-border bg-card">
                   <CardContent className="p-8">
-                    <img src="/ceo-photo.jpg" alt="엄기대 대표 행정사" className="h-32 w-32 rounded-full object-cover object-top" />
+                    <img src="/ceo-photo.jpg" alt="엄기대 대표 행정사" className="mx-auto h-56 w-44 rounded-2xl object-cover object-top" />
                     <h3 className="mt-6 text-2xl font-semibold text-card-foreground">
                       {member.name}
                     </h3>
