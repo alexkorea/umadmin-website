@@ -63,12 +63,12 @@ const team = [
 ]
 
 const serviceAreas = [
-  { icon: Building, name: "기업 행정", description: "비영리법인설립, 농업법인설립" },
+  { icon: Building, name: "기업 행정", description: "농업회사법인 및 영농조합법인 설립" },
   { icon: Globe, name: "출입국 업무", description: "D-8, E-7, F-5, F-4 비자" },
   { icon: Gavel, name: "행정심판", description: "구제, 이의신청" },
   { icon: Landmark, name: "부동산 행정", description: "개발행위허가, 토지보상" },
   { icon: FileCheck, name: "인허가", description: "각종 인허가 및 등록" },
-  { icon: Scale, name: "법인설립", description: "행정조합 및 법인" },
+  { icon: Scale, name: "협동조합 및 비영리단체", description: "협동조합, 비영리단체 설립" },
   { icon: Shield, name: "민원 행정", description: "민허가, 등록업무" },
   { icon: Briefcase, name: "재건축/재개발", description: "재건축 재개발 업무" },
 ]

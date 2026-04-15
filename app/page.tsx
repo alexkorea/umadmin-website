@@ -25,7 +25,7 @@ const services = [
   {
     icon: Building2,
     title: "기업관련 행정업무",
-    description: "비영리법인설립, 농업법인설립 등 각종 법인 설립 및 기업 행정업무를 전문적으로 대행합니다.",
+    description: "농업회사법인·영농조합법인 설립 및 경영컨설팅 등 기업 행정업무를 전문적으로 대행합니다.",
   },
   {
     icon: Globe,
@@ -49,14 +49,14 @@ const services = [
   },
   {
     icon: Scale,
-    title: "행정조합 및 법인설립",
-    description: "행정조합 설립, 법인 설립 등 복잡한 행정 절차를 체계적으로 지원합니다.",
+    title: "협동조합 및 비영리법인",
+    description: "협동조합 및 비영리법인 설립 등 복잡한 행정 절차를 체계적으로 지원합니다.",
   },
 ]
 
 const stats = [
-  { value: "15+", label: "년 업력", icon: Clock },
-  { value: "1,000+", label: "누적 의뢰 건수", icon: Users },
+  { value: "5", label: "년 업력", icon: Clock },
+  { value: "500", label: "누적 상담 건수", icon: Users },
   { value: "98%", label: "고객 만족도", icon: TrendingUp },
   { value: "30+", label: "전문 업무 분야", icon: Award },
 ]
